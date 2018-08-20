@@ -5,7 +5,7 @@ In this code we used, the **XGBoost** technique which is a tuned implementation 
 This technique was near to DNN and with the learning rate that was used, was even faster than DNN code version.
 
 I think sometimes the gradien boosting methods could be used, with faster running times and simmilar accuracies to DNN, at the moment of writing this, some better results in the Kaggle contest are using
-LigthGBM methos which is a similar method to XGBoost
+LigthGBM methods which is similar to XGBoost method.
 
-Some of the time variables was taken from antoher kernels, this code was most an attempt to have a comparison code for our DNN Time series version, we didn't spend much time adding new variables or adjusting the parameters.
+Some of the time variables was taken from antoher kernels, this code is more an attempt to have a comparison code for our DNN Time series version, we didn't spend much time adding new variables or adjusting the parameters.
 
