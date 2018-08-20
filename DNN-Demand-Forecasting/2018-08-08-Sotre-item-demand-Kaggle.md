@@ -20,9 +20,9 @@ PATH='/home/adrianrdzv/Documentos/fastai/fastai/data/forecasting/'
 ```
 
 Feature Space:
-* train: Los datos de entranamiento proporcionados por Kaggle
-* submmission: ejemplo de salida
-* test: los datos de salida que generaremos
+* train: training data downloaded from kaggle
+* submmission: submmision example
+* test: test data to generate
 
 ## Analyze data previous to data cleansing
 
@@ -447,8 +447,6 @@ len(train),len(test)
     (913000, 45000)
 
 
-
-La siguiente función "add_datepart" nos proporciona una gran variedad de variables temporales que pueden capturar comportamientos de estacioanlidad y demas caracteristicas temporales en los datos
 
 The next function "add_datepart" will give us a variety of temporary variables who captures seasonality behaviours and stuff related to time series
 
@@ -975,9 +973,7 @@ test.head()
 </div>
 
 
-
-Para poder hacer uso de las funciones de la red neuronal debemos identificar que variables trataremos como categoricas y cuales como continuas, para este caso todas las trataremos como categoricas
-
+To being able to use the DNN functions we have to identify the variables that we are going to use as categorical and the ones we will use as continous, for this purpose all will be treated as categorical
 
 ```python
 #cat_vars = ['store', 'item', 'Dayofweek', 'Year', 'Month', 'Day']
@@ -999,8 +995,6 @@ dep = 'sales'
 test[dep]=0
 join_test=test.copy() # Pendiente eliminar
 ```
-
-Debemos modificar explicitamente el dataframe para que cada variable categorica se exprese como tal, dado que asi espera las funciones
 
 We need to modify explictly the dataframe in order to every categorical variable be tagged as categorical, and the same for continuos
 
